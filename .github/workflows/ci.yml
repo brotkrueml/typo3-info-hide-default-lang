@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    paths:
+      - 'composer.json'
+      - '.github/workflows/ci.yml'
+      - '**.php'
+  pull_request:
+    paths:
+      - 'composer.json'
+      - '.github/workflows/ci.yml'
+      - '**.php'
+
+jobs:
+  build:
+    name: Linting PHP
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-versions:
+          - '8.1'
+          - '8.2'
+          - '8.3'
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Setup PHP version
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: |
+          echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - name: Cache composer dependencies
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
+          restore-keys: ${{ runner.os }}-composer-
+      - name: Install composer dependencies
+        run: |
+          composer --version
+          composer update --no-progress
+      - name: Run PHP linter
+        run: |
+          find . -type f -name '*.php' ! -path "./.Build/*" -print0 | xargs -0 -n1 -P4 php -l -n | (! grep -v "No syntax errors detected" )

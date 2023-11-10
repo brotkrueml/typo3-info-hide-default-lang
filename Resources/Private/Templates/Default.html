@@ -1,0 +1,29 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+    xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:be.pageRenderer
+    includeCssFiles="{0: 'EXT:info_hide_default_lang/Resources/Public/Css/info-hide-default-lang.css'}"
+/>
+
+<f:variable name="pagePropertiesLink"><be:uri.editRecord uid="{pageId}" table="pages" returnUrl="{f:be.uri(route: 'web_layout',  parameters='{id: pageId}')}"/></f:variable>
+<f:variable name="tabTitle"><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.language"/></f:variable>
+<f:variable name="fieldTitle"><f:translate key="LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.l18n_cfg.I.1"/></f:variable>
+
+<div class="info-hide-default-lang__container">
+    <core:icon identifier="info-hide-default-lang-icon" size="large"/>
+
+    <div>
+        <p><f:translate key="information" extensionName="InfoHideDefaultLang"/></p>
+        <p>
+            <f:translate key="action.prefix" extensionName="info_hide_default_lang"/>
+            <a class="info-hide-default-lang__link" href="{pagePropertiesLink}"><f:translate key="action.linkText" extensionName="info_hide_default_lang"/></a>
+            <f:translate key="action.suffix" arguments="{0: '{tabTitle}', 1: '{fieldTitle}'}" extensionName="info_hide_default_lang"/>
+        </p>
+    </div>
+</div>
+
+</html>

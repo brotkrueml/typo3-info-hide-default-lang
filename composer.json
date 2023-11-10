@@ -1,0 +1,54 @@
+{
+	"name": "brotkrueml/typo3-info-hide-default-lang",
+	"description": "Show information about activated \"Hide default language\" in TYPO3 page module",
+	"license": "GPL-2.0-or-later",
+	"type": "typo3-cms-extension",
+	"keywords": [
+		"TYPO3 CMS",
+		"TYPO3 extension"
+	],
+	"authors": [
+		{
+			"name": "Chris Müller",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/brotkrueml/typo3-info-hide-default-lang/issues",
+		"source": "https://github.com/brotkrueml/typo3-info-hide-default-lang"
+	},
+	"require": {
+		"php": ">=8.1",
+		"typo3/cms-backend": "^12.4",
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-fluid": "^12.4"
+	},
+	"require-dev": {
+		"brotkrueml/coding-standards": "~5.0.0",
+		"ergebnis/composer-normalize": "~2.39.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Brotkrueml\\InfoHideDefaultLang\\": "Classes/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true,
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		},
+		"bin-dir": ".Build/bin",
+		"sort-packages": true,
+		"vendor-dir": ".Build/vendor"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-main": "1.0.x-dev"
+		},
+		"typo3/cms": {
+			"extension-key": "info_hide_default_lang",
+			"web-dir": ".Build/web"
+		}
+	}
+}

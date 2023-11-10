@@ -1,0 +1,13 @@
+.info-hide-default-lang__container {
+    display: flex;
+    gap: var(--typo3-spacing);
+    margin-bottom: var(--typo3-spacing);
+}
+
+.info-hide-default-lang__icon {
+    border-radius: var(--bs-border-radius-sm);
+}
+
+.info-hide-default-lang__link {
+    text-decoration: underline;
+}

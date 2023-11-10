@@ -7,5 +7,6 @@ the default language can be disabled. By default, this is only visible in the
 page properties where this can be adjusted. This extension displays a hint on
 the backend page itself to make editors aware of this setting.
 
+[Documentation](https://docs.typo3.org/p/brotkrueml/typo3-info-hide-default-lang/main/en-us/) |
 [Changelog](https://github.com/brotkrueml/typo3-info-hide-default-lang/blob/main/CHANGELOG.md) |
 [TYPO3 Extension Repository](https://extensions.typo3.org/extension/info_hide_default_lang)

@@ -15,13 +15,14 @@
 	],
 	"support": {
 		"issues": "https://github.com/brotkrueml/typo3-info-hide-default-lang/issues",
-		"source": "https://github.com/brotkrueml/typo3-info-hide-default-lang"
+		"source": "https://github.com/brotkrueml/typo3-info-hide-default-lang",
+		"docs": "https://docs.typo3.org/p/brotkrueml/typo3-info-hide-default-lang/main/en-us/"
 	},
 	"require": {
 		"php": ">=8.1",
 		"typo3/cms-backend": "^12.4",
-        "typo3/cms-core": "^12.4",
-        "typo3/cms-fluid": "^12.4"
+		"typo3/cms-core": "^12.4",
+		"typo3/cms-fluid": "^12.4"
 	},
 	"require-dev": {
 		"brotkrueml/coding-standards": "~5.0.0",

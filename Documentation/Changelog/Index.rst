@@ -11,7 +11,7 @@ and this project adheres to `Semantic Versioning <https://semver.org/spec/v2.0.0
 `Unreleased <https://github.com/brotkrueml/typo3-info-hide-default-lang/compare/v1.0.0...HEAD>`_
 ----------------------------------------------------------------------------------------------------
 
-`1.0.0 <https://github.com/brotkrueml/typo3-info-hide-default-lang/releases/tag/v1.0.0>`_ - 2023-11-xx
+`1.0.0 <https://github.com/brotkrueml/typo3-info-hide-default-lang/releases/tag/v1.0.0>`_ - 2023-12-05
 ----------------------------------------------------------------------------------------------------------
 
 Initial release

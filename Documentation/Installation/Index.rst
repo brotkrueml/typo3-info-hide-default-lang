@@ -11,7 +11,7 @@ Installation
 Target group: **Administrators**
 
 .. note::
-   The extension in version |release| supports TYPO3 v12 LTS.
+   The extension in version |version| supports TYPO3 v12 LTS.
 
 The recommended way to install this extension is by using Composer. In your
 Composer-based TYPO3 project root, type:

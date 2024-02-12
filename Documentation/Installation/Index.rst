@@ -11,7 +11,7 @@ Installation
 Target group: **Administrators**
 
 .. note::
-   The extension in version |version| supports TYPO3 v12 LTS.
+   The extension in version |version| supports TYPO3 v12 LTS and TYPO3 v13.
 
 The recommended way to install this extension is by using Composer. In your
 Composer-based TYPO3 project root, type:
@@ -27,4 +27,4 @@ See :ref:`t3start:extensions_legacy_management` for a manual how to
 install an extension.
 
 
-.. _TYPO3 Extension Repository (TER): https://extensions.typo3.org/extension/info_hide_default_lang/
+.. _TYPO3 Extension Repository (TER): https://extensions.typo3.org/extension/info_hide_default_lang

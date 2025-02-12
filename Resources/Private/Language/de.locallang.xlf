@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:info_hide_default_lang/Resources/Private/Language/locallang.xlf" date="2023-11-10T9:47:23Z" product-name="info_hide_default_lang" target-language="de">
+    <body>
+      <trans-unit id="action.prefix" resname="action.prefix" approved="yes">
+        <source><![CDATA[To activate it, go to the]]></source>
+        <target state="final"><![CDATA[Um sie zu aktivieren, rufen Sie die]]></target>
+      </trans-unit>
+      <trans-unit id="action.linkText" resname="action.linkText" approved="yes">
+        <source><![CDATA[page properties of the default language]]></source>
+        <target state="final"><![CDATA[Seiteneigenschaften der Standardsprache]]></target>
+      </trans-unit>
+      <trans-unit id="action.suffix" resname="action.suffix" approved="yes">
+        <source><![CDATA[- tab "%1$s" - and disable the option "%2$s".]]></source>
+        <target state="final"><![CDATA[- Tab "%1$s" - und deaktivieren Sie die Option "%2$s".]]></target>
+      </trans-unit>
+      <trans-unit id="information" resname="information" approved="yes">
+        <source><![CDATA[The page for the default language is deactivated!]]></source>
+        <target state="final"><![CDATA[Die Seite für die Standardsprache ist deaktiviert!]]></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

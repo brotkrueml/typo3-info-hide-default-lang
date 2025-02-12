@@ -2,21 +2,21 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" datatype="plaintext" original="EXT:info_hide_default_lang/Resources/Private/Language/locallang.xlf" date="2023-11-10T9:47:23Z" product-name="info_hide_default_lang" target-language="fr">
     <body>
-      <trans-unit id="action.prefix" resname="action.prefix">
+      <trans-unit id="action.prefix" resname="action.prefix" approved="yes">
         <source><![CDATA[To activate it, go to the]]></source>
-        <target state="translated"><![CDATA[Pour l'activer, allez à la]]></target>
+        <target state="final"><![CDATA[Pour l'activer, allez à la]]></target>
       </trans-unit>
-      <trans-unit id="action.linkText" resname="action.linkText">
+      <trans-unit id="action.linkText" resname="action.linkText" approved="yes">
         <source><![CDATA[page properties of the default language]]></source>
-        <target state="translated"><![CDATA[les propriétés de la page de la langue par défaut]]></target>
+        <target state="final"><![CDATA[les propriétés de la page de la langue par défaut]]></target>
       </trans-unit>
-      <trans-unit id="action.suffix" resname="action.suffix">
+      <trans-unit id="action.suffix" resname="action.suffix" approved="yes">
         <source><![CDATA[- tab "%1$s" - and disable the option "%2$s".]]></source>
-        <target state="translated"><![CDATA[- onglet "%1$s" - et désactivez l'option "%2$s".]]></target>
+        <target state="final"><![CDATA[- onglet "%1$s" - et désactivez l'option "%2$s".]]></target>
       </trans-unit>
-      <trans-unit id="information" resname="information">
+      <trans-unit id="information" resname="information" approved="yes">
         <source><![CDATA[The page for the default language is deactivated!]]></source>
-        <target state="translated"><![CDATA[La page de la langue par défaut est désactivée !]]></target>
+        <target state="final"><![CDATA[La page de la langue par défaut est désactivée !]]></target>
       </trans-unit>
     </body>
   </file>

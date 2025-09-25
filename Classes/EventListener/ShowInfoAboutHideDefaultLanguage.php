@@ -24,7 +24,7 @@ final class ShowInfoAboutHideDefaultLanguage
 {
     public function __invoke(ModifyPageLayoutContentEvent $event): void
     {
-        $pageId = (int)($event->getRequest()->getQueryParams()['id'] ?? 0);
+        $pageId = (int) ($event->getRequest()->getQueryParams()['id'] ?? 0);
         $localization = BackendUtility::getRecord('pages', $pageId, 'l18n_cfg')['l18n_cfg'] ?? 0;
         if (($localization & 1) === 0) {
             return;

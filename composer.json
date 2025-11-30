@@ -25,11 +25,9 @@
 		"typo3/cms-fluid": "^12.4 || ^13.4"
 	},
 	"require-dev": {
-		"brotkrueml/coding-standards": "~6.1.0",
+		"brotkrueml/coding-standards": "~6.3.0",
 		"ergebnis/composer-normalize": "~2.48.2"
 	},
-    "minimum-stability": "RC",
-    "prefer-stable": true,
 	"autoload": {
 		"psr-4": {
 			"Brotkrueml\\InfoHideDefaultLang\\": "Classes/"

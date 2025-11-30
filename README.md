@@ -13,7 +13,7 @@ the backend page itself to make editors aware of this setting.
 
 | Latest release | TYPO3       | PHP   | Updates will contain                           |
 |----------------|-------------|-------|------------------------------------------------|
-| 2.x            | 13.4 / 14.x | ≥ 8.2 | (In development)                               |
+| 2.x            | 13.4 / 14.x | ≥ 8.2 | Features, security and bug fixes               |
 | 1.x            | 12.4 / 13.4 | ≥ 8.1 | Security and bug fixes (EOL expected Apr 2026) |
 
 [Documentation](https://docs.typo3.org/p/brotkrueml/typo3-info-hide-default-lang/main/en-us/) |

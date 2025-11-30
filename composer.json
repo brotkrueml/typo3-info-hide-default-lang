@@ -45,7 +45,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-main": "1.2.x-dev"
+			"dev-main": "2.0.x-dev"
 		},
 		"typo3/cms": {
 			"extension-key": "info_hide_default_lang",

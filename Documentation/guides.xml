@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides
+    xmlns="https://www.phpdoc.org/guides"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.phpdoc.org/guides ../vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
+    links-are-relative="true"
+>
+    <extension
+        class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+        project-repository="https://github.com/brotkrueml/typo3-info-hide-default-lang"
+        project-issues="https://github.com/brotkrueml/typo3-info-hide-default-lang/issues"
+        edit-on-github-branch="main"
+        edit-on-github="brotkrueml/typo3-info-hide-default-lang"
+        typo3-core-preferred="stable"
+    />
+    <project
+        title="info_hide_default_lang"
+        release="1.2.0-dev"
+        version="1.2"
+        copyright="since 2023 by Chris Müller"
+    />
+</guides>

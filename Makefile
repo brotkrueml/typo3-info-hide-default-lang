@@ -13,6 +13,12 @@ changelog:
 cs: vendor
 	.Build/bin/ecs --fix
 
+docs: ## Render documentation
+	docker run --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
+
+docs-check: ## Check documentation renders without warnings
+	docker run --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log
+
 vendor: composer.json composer.lock
 	composer validate
 	composer install

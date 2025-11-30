@@ -18,7 +18,6 @@ the backend page itself to make editors aware of this setting:
 
 .. figure:: /Images/example.png
    :alt: Display information that the default language of a page is deactivated
-   :class: with-shadow
 
    Display information that the default language of a page is deactivated
 

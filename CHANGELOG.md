@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+- Compatibility with TYPO3 v12
+
 ## [1.1.0] - 2024-02-12
 
 ### Added

@@ -9,6 +9,13 @@ the default language can be disabled. By default, this is only visible in the
 page properties where this can be adjusted. This extension displays a hint on
 the backend page itself to make editors aware of this setting.
 
+## Versions and support
+
+| Latest release | TYPO3       | PHP   | Updates will contain                           |
+|----------------|-------------|-------|------------------------------------------------|
+| 2.x            | 13.4        | ≥ 8.1 | (In development)                               |
+| 1.x            | 12.4 / 13.4 | ≥ 8.1 | Security and bug fixes (EOL expected Apr 2026) |
+
 [Documentation](https://docs.typo3.org/p/brotkrueml/typo3-info-hide-default-lang/main/en-us/) |
 [Translation](https://crowdin.com/project/typo3-extension-infohidedefaul) |
 [Changelog](https://github.com/brotkrueml/typo3-info-hide-default-lang/blob/main/CHANGELOG.md) |

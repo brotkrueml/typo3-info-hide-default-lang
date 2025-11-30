@@ -14,14 +14,18 @@ namespace Brotkrueml\InfoHideDefaultLang\EventListener;
 use Brotkrueml\InfoHideDefaultLang\Extension;
 use TYPO3\CMS\Backend\Controller\Event\ModifyPageLayoutContentEvent;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Fluid\View\StandaloneView;
+use TYPO3\CMS\Core\View\ViewFactoryData;
+use TYPO3\CMS\Core\View\ViewFactoryInterface;
 
 /**
  * @internal
  */
-final class ShowInfoAboutHideDefaultLanguage
+final readonly class ShowInfoAboutHideDefaultLanguage
 {
+    public function __construct(
+        private ViewFactoryInterface $viewFactory,
+    ) {}
+
     public function __invoke(ModifyPageLayoutContentEvent $event): void
     {
         $pageId = (int) ($event->getRequest()->getQueryParams()['id'] ?? 0);
@@ -30,12 +34,13 @@ final class ShowInfoAboutHideDefaultLanguage
             return;
         }
 
-        $view = GeneralUtility::makeInstance(StandaloneView::class);
-        $templateNameAndPath = 'EXT:' . Extension::KEY . '/Resources/Private/Templates/Default.html';
-        $view->setTemplatePathAndFilename(GeneralUtility::getFileAbsFileName($templateNameAndPath));
-
+        $viewFactoryData = new ViewFactoryData(
+            templateRootPaths: ['EXT:' . Extension::KEY . '/Resources/Private/Templates'],
+            request: $event->getRequest(),
+        );
+        $view = $this->viewFactory->create($viewFactoryData);
         $view->assign('pageId', $pageId);
 
-        $event->addHeaderContent($view->render());
+        $event->addHeaderContent($view->render('Default'));
     }
 }
